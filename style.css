@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  background: radial-gradient(circle, #6a040f 30%, #370617 71%, #03071e 100%);
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #03071e;
+  border-radius: 20px;
+  background-color: #d00000;
+  width: 22rem;
+  height: 16rem;
+}
+
+main .conteudo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 18.5rem;
+  height: 15.5rem;
+}
+
+main h1 {
+  font-size: 1.8rem;
+  padding-bottom: 0.5rem;
+  color: #f48c06;
+  text-transform: uppercase;
+}
+
+main input {
+  width: 100%;
+  height: 2rem;
+  border: 0.1rem solid #03071e;
+}
+
+main .calcular {
+  border: 1px solid #03071e;
+  border-radius: 20px;
+  background-color: #d00000;
+  border-radius: 6px;
+  height: 2.5rem;
+  cursor: pointer;
+  background-color: white;
+}
+
+main .calcular:hover {
+  background-color: #dfdfdf;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+main #resultado2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 0%;
+  height: 0rem;
+  font-size: x-large;
+  color: #03071e;
+}
+
+main #resultado2 #resultado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 250px;
+  height: 100%;
+}
+/*# sourceMappingURL=style.css.map */
