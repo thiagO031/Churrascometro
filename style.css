@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Pathway+Gothic+One&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -55,16 +56,18 @@ main .conteudo {
 }
 
 main h1 {
-  font-size: 1.8rem;
-  padding-bottom: 0.5rem;
+  font-size: 1.75rem;
+  padding: 0.5rem 0rem;
   color: #f48c06;
   text-transform: uppercase;
+  font-family: "Fredericka the Great";
 }
 
 main input {
   width: 100%;
   height: 2rem;
   border: 0.1rem solid #03071e;
+  padding-left: 3px;
 }
 
 main .calcular {
@@ -95,8 +98,9 @@ main #resultado2 {
           justify-content: center;
   width: 0%;
   height: 0rem;
-  font-size: x-large;
+  font-size: 1.8rem;
   color: #03071e;
+  font-family: "Pathway Gothic One";
 }
 
 main #resultado2 #resultado {

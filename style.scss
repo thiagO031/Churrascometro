@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Pathway+Gothic+One&display=swap');
+
 // @use 'variables';
 // @use 'mixins';
 $gradienteColor: radial-gradient(circle, rgba(106, 4, 15, 1) 30%, rgba(55, 6, 23, 1) 71%, rgba(3, 7, 30, 1) 100%);
 $colorDarkBlue: #03071e;
+$fontFredericka: 'Fredericka the Great';
+$fontPathway: 'Pathway Gothic One';
 
 @mixin flexCenter {
     display: flex;
@@ -14,8 +18,6 @@ $colorDarkBlue: #03071e;
     border-radius: 20px;
     background-color: #d00000;
 }
-
-
 
 
 *{
@@ -52,16 +54,18 @@ main{
     }
 
     h1{
-        font-size: 1.8rem;
-        padding-bottom: 0.5rem;
+        font-size: 1.75rem;
+        padding: 0.5rem 0rem;
         color: #f48c06;
         text-transform: uppercase;
+        font-family: $fontFredericka;
     }
 
     input{
         width: 100%;
         height: 2rem;
         border: 0.1rem solid #03071e;
+        padding-left: 3px
     }
 
     .calcular{
@@ -83,8 +87,9 @@ main{
         width: 0%;
         height: 0rem;
 
-        font-size: x-large;
+        font-size: 1.8rem;
         color: $colorDarkBlue;
+        font-family: $fontPathway;
 
         #resultado{
             @include flexCenter();
