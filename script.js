@@ -68,6 +68,20 @@ function calcular(){
     res2.style.borderRadius = '8px'
     cont.style.height = '27rem'
     conteudo.style.height = '27rem'
+
+
+    // media query
+    if (window.matchMedia("(max-width:640px)").matches) {
+        cont.style.height = '100vh'
+        cont.style.width = '100vw'
+        // cont.style.backgroundColor = 'background: rgb(232,58,20)'
+        // cont.style.backgroundColor = ' radial-gradient(circle, rgba(232,58,20,1) 18%, rgba(208,0,0,1) 57%, rgba(99,6,6,1) 99%)'
+        /* a viewport tem pelo menos 800 pixels de largura */
+      } else {
+        // cont.style.height = '27rem'
+        /* a viewport menos que 800 pixels de largura */
+      }
+
 }
 
     // let adultos = Number(document.getElementById('adultos').value);
