@@ -40,9 +40,9 @@ main {
     @include borderEColor();
 
     width: 22rem;
-    height: 16rem;
+    height: 18rem;
 
-    // border: 1px solid white;
+    border: 2px solid #03071e;
 
     .conteudo {
         display: flex;
@@ -51,93 +51,13 @@ main {
         justify-content: space-evenly;
 
         width: 18.5rem;
-        height: 15.5rem;
+        height: 100%;
         // border: 1px solid green;
-    }
-
-    h1 {
-        font-size: 1.75rem;
-        padding: 0.5rem 0rem;
-        color: #f48c06;
-        text-transform: uppercase;
-        font-family: $fontFredericka;
-    }
-
-    input {
-        width: 100%;
-        height: 2rem;
-        border: 0.1rem solid #03071e;
-        padding-left: 3px;
-
-        &:nth-child(1){
-            border-radius: 6px  6px 0px 0px;
-        }
-
-        &:nth-child(3){
-                border-radius: 0px  0px 6px 6px;
-        }
-    }
-
-    .calcular {
-        @include borderEColor();
-        border-radius: 6px;
-        height: 2.5rem;
-        cursor: pointer;
-        background-color: white;
-
-        &:hover {
-            background-color: rgb(223, 223, 223);
-            transition: 1s;
-        }
-    }
-
-    #resultado2 {
-        @include flexCenter();
-
-        width: 0%;
-        height: 0rem;
-
-        font-size: 1.8rem;
-        color: $colorDarkBlue;
-        font-family: $fontPathway;
-
-        #resultado {
-            @include flexCenter();
-            width: 250px;
-            height: 100%;
-        }
-    }
-}
-
-// media queries
-@media (max-width: 450px) {
-    main {
-        @include flexCenter();
-        // @include borderEColor();
-        // background: rgb(232,58,20);
-        // background: radial-gradient(circle, rgba(232,58,20,1) 18%, rgba(208,0,0,1) 57%, rgba(99,6,6,1) 99%);
-        border-radius: 0px;
-        background: rgb(208,0,0);
-        background: rgb(208,0,0);
-        background: radial-gradient(circle, rgba(208,0,0,1) 0%, rgba(99,6,6,1) 100%);
-
-        width: 100vw;
-        height: 100vh;
-
-        .conteudo {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-evenly;
-
-            width: 20rem;
-            height: 17.5rem;
-            // border: 2px solid green;
-        }
 
         h1 {
-            font-size: 1.9rem;
-            padding: 0.5rem 0rem;
+            font-size: 1.75rem;
+            // padding: 0.5rem 0rem;
+
             color: #f48c06;
             text-transform: uppercase;
             font-family: $fontFredericka;
@@ -145,22 +65,129 @@ main {
 
         input {
             width: 100%;
-            height: 2.2rem;
+            height: 2.5rem;
             border: 0.1rem solid #03071e;
-            padding-left: 3px;
+            // padding-left: 3px;
+            text-align: center;
+            font-size: 0.9rem;
+
+            &:nth-child(1) {
+                border-radius: 6px 6px 0px 0px;
+            }
+
+            &:nth-child(3) {
+                border-radius: 0px 0px 6px 6px;
+            }
         }
 
         .calcular {
             @include borderEColor();
             border-radius: 6px;
-            height: 2.8rem;
+            height: 3.1rem;
             cursor: pointer;
             background-color: white;
+
 
             &:hover {
                 background-color: rgb(223, 223, 223);
                 transition: 1s;
             }
         }
+
+        #resultado2 {
+            @include flexCenter();
+
+            width: 0%;
+            height: 0rem;
+
+            font-size: 1.65rem;
+            color: $colorDarkBlue;
+            font-family: $fontPathway;
+
+            #resultado {
+                @include flexCenter();
+                width: 250px;
+                height: 100%;
+                // border: 1px solid black;
+            }
+        }
     }
+
+
+}
+
+
+// media queries
+@media (max-width: 450px) {
+    main {
+        @include flexCenter();
+        @include borderEColor();
+
+
+        width: 19rem;
+        height: 19.5rem;
+
+        border: 2px solid #03071e;
+
+        .conteudo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            width: 15.5rem;
+            height: 17.5rem;
+            // border: 2px solid green;
+
+            h1 {
+                margin-top: 1rem;
+                font-size: 1.5rem;
+                // padding: 0.5rem 0rem;
+                color: #f48c06;
+                text-transform: uppercase;
+                font-family: $fontFredericka;
+            }
+
+            input {
+                // width: 100%;
+                height: 2.5rem;
+                border: 0.1rem solid #03071e;
+                text-align: center;
+                font-size: 0.9rem;
+            }
+
+            .calcular {
+                @include borderEColor();
+                border-radius: 6px;
+                height: 3.1rem;
+                cursor: pointer;
+                font-size: 0.9rem;
+                background-color: white;
+
+                &:hover {
+                    background-color: rgb(211, 211, 211);
+                    transition: 1s;
+                }
+            }
+
+            #resultado2 {
+                @include flexCenter();
+
+                width: 0%;
+                height: 0rem;
+
+                font-size: 1.6rem;
+                color: $colorDarkBlue;
+                font-family: $fontPathway;
+
+                #resultado {
+                    @include flexCenter();
+                    width: 200px;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+
 }

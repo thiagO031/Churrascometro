@@ -33,26 +33,26 @@ function calcular(){
 
     // valores padroes ATE 6 HORAS de festa ADULTOS E CRINÇAS
     if (adultos > 1 && crianca >= 1 && duracao <= 6) {
-        res.innerHTML = `${adulto6hrs.carne + crianca6hrs.carne} Kg de carne <br>
-        ${adulto6hrs.cerveja} Caixinhas de Cerveja <br>
-        ${adulto6hrs.cerveja + crianca6hrs.refri} Garrafas de 2L de Bebida`
+        res.innerHTML = `🥩 ${adulto6hrs.carne + crianca6hrs.carne} Kg de carne <br>
+        🍺 ${adulto6hrs.cerveja} Caixinhas de Cerveja <br>
+        🧃 ${adulto6hrs.cerveja + crianca6hrs.refri} Garrafas de 2L de Bebida`
         // valores MAIS DE 6 HORAS de festa ADULTOS E CRIANÇAS
     } else {
         if (adultos > 1 && crianca >= 1 && duracao > 6) {
-            res.innerHTML = `${adultoMais6hrs.carne + crianca6hrs.carne} Kg de Carne <br>
-            ${adultoMais6hrs.cerveja} Caixinhas de Cerveja <br>
-            ${adultoMais6hrs.refri + criancaMais6hrs.refri} Garrafas de 2L de Bebida`
+            res.innerHTML = `🥩 ${adultoMais6hrs.carne + crianca6hrs.carne} Kg de Carne <br>
+            🍺 ${adultoMais6hrs.cerveja} Caixinhas de Cerveja <br>
+            🧃 ${adultoMais6hrs.refri + criancaMais6hrs.refri} Garrafas de 2L de Bebida`
             // valores padroes ATE 6 HORAS de festa SO ADULTOS
         } else if (adultos > 1 && crianca == 0 && duracao <= 6) {
-            res.innerHTML = `${adulto6hrs.carne} Kg de Carne <br>
-            ${adulto6hrs.cerveja} Caixinhas de Cerveja <br>
-            ${adulto6hrs.refri} Garrafas de 2L de Bebida`
+            res.innerHTML = `🥩 ${adulto6hrs.carne} Kg de Carne <br>
+            🍺 ${adulto6hrs.cerveja} Caixinhas de Cerveja <br>
+            🧃 ${adulto6hrs.refri} Garrafas de 2L de Bebida`
             // valores MAIS DE 6 HORAS de festa SO ADULTOS
         } else {
             if (adultos > 1 && crianca == 0 && duracao > 6) {
-                res.innerHTML = `${adultoMais6hrs.carne} Kg de Carne <br>
-                ${adultoMais6hrs.cerveja} Caixinhas de Cerveja <br>
-                ${adultoMais6hrs.refri} Garrafas de 2L de Bebida`
+                res.innerHTML = `🥩 ${adultoMais6hrs.carne} Kg de Carne <br>
+                🍺 ${adultoMais6hrs.cerveja} Caixinhas de Cerveja <br>
+                🧃 ${adultoMais6hrs.refri} Garrafas de 2L de Bebida`
             } else{
                 alert('Algum dados está errado! Certifique-se')
             }
@@ -66,25 +66,17 @@ function calcular(){
     res2.style.backgroundColor = '#f48c06'
     res2.style.border = '1px solid black'
     res2.style.borderRadius = '8px'
-    cont.style.height = '27rem'
+    // res2.style.marginTop = '1rem'
+
     conteudo.style.height = '27rem'
+    cont.style.height = '29rem'
 
 
-    // media query
-    if (window.matchMedia("(max-width:640px)").matches) {
-        cont.style.height = '100vh'
-        cont.style.width = '100vw'
-        // cont.style.backgroundColor = 'background: rgb(232,58,20)'
-        // cont.style.backgroundColor = ' radial-gradient(circle, rgba(232,58,20,1) 18%, rgba(208,0,0,1) 57%, rgba(99,6,6,1) 99%)'
-        /* a viewport tem pelo menos 800 pixels de largura */
-      } else {
-        // cont.style.height = '27rem'
-        /* a viewport menos que 800 pixels de largura */
+
+    //media query
+    if (window.matchMedia("(max-width: 450px)").matches) {
+        cont.style.height = '30rem'
+        res2.style.height = '12rem'
       }
 
 }
-
-    // let adultos = Number(document.getElementById('adultos').value);
-    // let crianca = Number(document.getElementById('criancas').value);
-    // let duracao = Number(document.getElementById('duracao').value)
-    // let res = document.getElementById('resultado')

@@ -34,7 +34,8 @@ main {
   border-radius: 20px;
   background-color: #d00000;
   width: 22rem;
-  height: 16rem;
+  height: 18rem;
+  border: 2px solid #03071e;
 }
 
 main .conteudo {
@@ -52,49 +53,49 @@ main .conteudo {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: 18.5rem;
-  height: 15.5rem;
+  height: 100%;
 }
 
-main h1 {
+main .conteudo h1 {
   font-size: 1.75rem;
-  padding: 0.5rem 0rem;
   color: #f48c06;
   text-transform: uppercase;
   font-family: "Fredericka the Great";
 }
 
-main input {
+main .conteudo input {
   width: 100%;
-  height: 2rem;
+  height: 2.5rem;
   border: 0.1rem solid #03071e;
-  padding-left: 3px;
+  text-align: center;
+  font-size: 0.9rem;
 }
 
-main input:nth-child(1) {
-  border-radius: 6px  6px 0px 0px;
+main .conteudo input:nth-child(1) {
+  border-radius: 6px 6px 0px 0px;
 }
 
-main input:nth-child(3) {
-  border-radius: 0px  0px 6px 6px;
+main .conteudo input:nth-child(3) {
+  border-radius: 0px 0px 6px 6px;
 }
 
-main .calcular {
+main .conteudo .calcular {
   border: 1px solid #03071e;
   border-radius: 20px;
   background-color: #d00000;
   border-radius: 6px;
-  height: 2.5rem;
+  height: 3.1rem;
   cursor: pointer;
   background-color: white;
 }
 
-main .calcular:hover {
+main .conteudo .calcular:hover {
   background-color: #dfdfdf;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-main #resultado2 {
+main .conteudo #resultado2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,12 +107,12 @@ main #resultado2 {
           justify-content: center;
   width: 0%;
   height: 0rem;
-  font-size: 1.8rem;
+  font-size: 1.65rem;
   color: #03071e;
   font-family: "Pathway Gothic One";
 }
 
-main #resultado2 #resultado {
+main .conteudo #resultado2 #resultado {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,12 +137,12 @@ main #resultado2 #resultado {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border-radius: 0px;
-    background: #d00000;
-    background: #d00000;
-    background: radial-gradient(circle, #d00000 0%, #630606 100%);
-    width: 100vw;
-    height: 100vh;
+    border: 1px solid #03071e;
+    border-radius: 20px;
+    background-color: #d00000;
+    width: 19rem;
+    height: 19.5rem;
+    border: 2px solid #03071e;
   }
   main .conteudo {
     display: -webkit-box;
@@ -154,38 +155,68 @@ main #resultado2 #resultado {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    width: 20rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 15.5rem;
     height: 17.5rem;
   }
-  main h1 {
-    font-size: 1.9rem;
-    padding: 0.5rem 0rem;
+  main .conteudo h1 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
     color: #f48c06;
     text-transform: uppercase;
     font-family: "Fredericka the Great";
   }
-  main input {
-    width: 100%;
-    height: 2.2rem;
+  main .conteudo input {
+    height: 2.5rem;
     border: 0.1rem solid #03071e;
-    padding-left: 3px;
+    text-align: center;
+    font-size: 0.9rem;
   }
-  main .calcular {
+  main .conteudo .calcular {
     border: 1px solid #03071e;
     border-radius: 20px;
     background-color: #d00000;
     border-radius: 6px;
-    height: 2.8rem;
+    height: 3.1rem;
     cursor: pointer;
+    font-size: 0.9rem;
     background-color: white;
   }
-  main .calcular:hover {
-    background-color: #dfdfdf;
+  main .conteudo .calcular:hover {
+    background-color: lightgray;
     -webkit-transition: 1s;
     transition: 1s;
+  }
+  main .conteudo #resultado2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 0%;
+    height: 0rem;
+    font-size: 1.6rem;
+    color: #03071e;
+    font-family: "Pathway Gothic One";
+  }
+  main .conteudo #resultado2 #resultado {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 200px;
+    height: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
