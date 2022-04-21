@@ -3,3 +3,5 @@
 
  Churrascometro - Projeto que calcula a quantidade de carne, bebidas e refrigerantes
  de acordo com a duração e a quantidade de adultos e crianças no churrasco.
+ 
+ Link churrascômetro: https://thiago031.github.io/Churrascometro/ 
